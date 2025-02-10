@@ -7,7 +7,9 @@ public class NavegandoNaInternet implements NavegadoNaInternetInterface {
     String respota;
 
 
-
+    /*
+    Metotdo Implementa da interface NavegadoNaInternetInterface
+     */
 
     @Override
     public void exibirPagina() {
@@ -30,12 +32,20 @@ public class NavegandoNaInternet implements NavegadoNaInternetInterface {
         }while (!respota.equalsIgnoreCase("S"));
     }
 
+
+    /*
+       Metotdo Implementa da interface NavegadoNaInternetInterface
+        */
     @Override
     public void adicionarNovaAba() {
         System.out.println("adicionado uma aba");
         exibirPagina();
     }
 
+
+    /*
+       Metotdo Implementa da interface NavegadoNaInternetInterface
+        */
     @Override
     public void atualizarPagina() {
         System.out.println("Atualizando pagina");
