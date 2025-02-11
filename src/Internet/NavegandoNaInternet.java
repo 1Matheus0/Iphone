@@ -18,12 +18,12 @@ public class NavegandoNaInternet implements NavegadoNaInternetInterface {
             respota = leia.nextLine();
             System.out.println("Acessando url: "+respota);
 
-            System.out.println("Deseja voltar? Sim(S) Não (N) ");
+            System.out.println("Deseja voltar? Sim(S) Não(N) ");
             System.out.println("Deseja atuliza a pagina? (A)");
             respota = leia.nextLine();
 
             if (respota.equalsIgnoreCase("S")) {
-                System.out.println("Tel inicial");
+                System.out.println("Tela inicial");
             } else if (respota.equalsIgnoreCase("A")) {
                 atualizarPagina();
             }else {

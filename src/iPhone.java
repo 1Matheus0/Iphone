@@ -1,10 +1,12 @@
 import Internet.NavegandoNaInternet;
+import Reprodutor.ReprodutorMusical;
 
 import java.util.Scanner;
 
 public class iPhone {
 Scanner leia = new Scanner(System.in);
     NavegandoNaInternet navegando = new NavegandoNaInternet();
+    ReprodutorMusical reprodutor = new ReprodutorMusical();
 
 
     String resposta;
@@ -30,6 +32,27 @@ Scanner leia = new Scanner(System.in);
                 System.out.println("erro");
             }
         }while(!resposta.equalsIgnoreCase("V"));
+    }
+
+
+    public void reprodutorMusical(){
+        do {
+            System.out.println("Deseja escolher uma nova musica? [N]");
+            System.out.println("Deseja pausar a música? [P]");
+            System.out.println("Deseja voltar? [V]");
+            resposta = leia.nextLine();
+
+            if (resposta.equalsIgnoreCase("N")) {
+                reprodutor.selecionarMusica();
+            } else if (resposta.equalsIgnoreCase("P")) {
+                reprodutor.pausar();
+            } else if (resposta.equalsIgnoreCase("V")) {
+                System.out.println("Tela inicial");
+            } else {
+                System.out.println("Não entedi oque disse");
+            }
+        } while (!resposta.equalsIgnoreCase("V"));
+
     }
 
 }

@@ -12,12 +12,15 @@ public class Main {
         do{
             System.out.println("Escolha uma das opcoes: ");
             System.out.println("Navegar na internet (I): ");
+            System.out.println("Escutar musica (M): ");
             System.out.println("Desligar Iphone (D): ");
             resposta = leia.nextLine();
 
             if (resposta.equalsIgnoreCase("I")){
                 iphone.navegandoNaInternet();
-            }else{
+            } else if (resposta.equalsIgnoreCase("M")) {
+                iphone.reprodutorMusical();
+            } else{
                 System.out.println("erro");
             }
 
